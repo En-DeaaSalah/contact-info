@@ -15,11 +15,16 @@ export async function getUSDTBalance(
         contractAddress
     }: IGetUSDTBalanceProps): Promise<string> {
 
-    const provider = ethers.getDefaultProvider();
-    const contract: any = new ethers.Contract(contractAddress, contractABI, provider);
+    try {
+        const provider = ethers.getDefaultProvider();
+        const contract: any = new ethers.Contract(contractAddress, contractABI, provider);
 
-    const balance = await contract.balanceOf(address);
-    return balance.toString();
+        const balance = await contract.balanceOf(address);
+        return balance.toString();
+    } catch (error) {
+        console.error('Error occurred while fetching USDT balance:', error);
+        throw error; // Rethrow the error to propagate it to the caller
+    }
 
 
 }
