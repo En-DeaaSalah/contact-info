@@ -1,3 +1,5 @@
+import {getLastBlockNumber, getUSDTBalance} from "blockchain-smart-contract-reader";
+
 describe('Ethereum Functions', () => {
     it('should retrieve the last block number', () => {
         getLastBlockNumber().then((blockNumber) => {
