@@ -1,9 +1,9 @@
 import './App.css'
 import {useState} from "react";
-import {getUSDTBalance} from "./helpers/getUSDTBalance";
 import {ContractAddressForm} from "./components/ContractAddressForm/index";
 import {Col, Divider, Flex, Row} from "antd";
 import {ShowLastBlockNumber} from "./components/ShowLastBlockNumber/index";
+import {getUSDTBalance} from 'blockchain-smart-contract-reader'
 
 function App() {
     const [balance, setBalance] = useState<string>("")

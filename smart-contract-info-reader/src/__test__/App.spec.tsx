@@ -1,6 +1,3 @@
-import {getLastBlockNumber} from "../helpers/getLastBlockNumber";
-import {getUSDTBalance} from "../helpers/getUSDTBalance";
-
 describe('Ethereum Functions', () => {
     it('should retrieve the last block number', () => {
         getLastBlockNumber().then((blockNumber) => {

@@ -1,9 +1,9 @@
 import style from './style.module.scss'
 import {IProps} from "./props";
 import {useEffect, useState} from "react";
-import {getLastBlockNumber} from "../../helpers/getLastBlockNumber";
 import {Flex, Spin} from "antd";
 import {ReloadOutlined} from "@ant-design/icons";
+import {getLastBlockNumber} from "blockchain-smart-contract-reader"
 
 export default function Component({}: IProps) {
     const [blockNumber, setBlockNumber] = useState<number>(0)
@@ -39,7 +39,6 @@ export default function Component({}: IProps) {
                 </Flex>
                 <div>{blockNumber}</div>
                 <div className={style.errorMessage}>{error}</div>
-
             </div>
         </Spin>
     )

@@ -16,7 +16,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.3.1",
     "antd": "^5.15.2",
-    "ethers": "^6.11.1",
+    "blockchain-smart-contract-reader": "^1.0.3",
     "jest-environment-jsdom": "^29.7.0",
     "jest-ts-webcompat-resolver": "^1.0.0",
     "react": "^18.2.0",
