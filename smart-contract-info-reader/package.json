@@ -1,9 +1,9 @@
 {
-  "name": "contact-info",
+  "name": "contract-info-reader",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://En-DeaaSalah.github.io/contact-info/",
+  "homepage": "https://En-DeaaSalah.github.io/smart-contract-info-reader/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

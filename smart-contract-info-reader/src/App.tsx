@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div className={'container'}>
-            <div className={'main-title'}>Welcome with Smart Contact Info Reader</div>
+            <div className={'main-title'}>Welcome with Smart Contract Info Reader</div>
             <Row style={{
                 marginTop: 75
             }}>
